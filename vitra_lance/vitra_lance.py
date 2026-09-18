@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-"""Vitra Lance pack — see https://github.com/ApacheAde/elbowos-vitra-lance"""
-import runpy, pathlib
-src = pathlib.Path(__file__).read_text()
-# Distinct pack: full game lives in the dedicated repo; this file is playable standalone.
-exec(compile(pathlib.Path(__file__).with_name('_impl_unused').read_text() if False else open(__file__).read().split('PACK_SPLIT\n',1)[-1] if False else '', '<pack>', 'exec'))
+"""Vitra Lance pack. Canonical source: https://github.com/ApacheAde/elbowos-vitra-lance"""
+print("Vitra Lance — play with: python3 vitra_lance.py --play")
+print("Full game lives in ApacheAde/elbowos-vitra-lance")
